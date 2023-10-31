@@ -12,21 +12,21 @@ public class Heroi {
     }
     public void categorizaHeroi(){
         Integer exp = this.getExp();
-        if(exp < 1000)
+        if(exp <= 1000)
             setNivel("Ferro");
-        else if(exp >= 1001 && exp <= 2000)
+        else if(exp <= 2000)
             setNivel("Bronze");
-        else if(exp >= 2001 && exp <= 5000)
+        else if(exp <= 5000)
             setNivel("Prata");
-        else if(exp >= 5001 && exp <= 6000)
+        else if(exp <= 6000)
             setNivel("Ouro");
-        else if(exp >= 6000 && exp <= 8000)
+        else if(exp <= 8000)
             setNivel("Platina");
-        else if(exp >= 8001 && exp <= 9000)
+        else if(exp <= 9000)
             setNivel("Ascendente");
-        else if(exp >= 9001 && exp <= 10000)
+        else if(exp <= 10000)
             setNivel("Imortal");
-        else if(exp >= 10001 )
+        else
             setNivel("Radiante");
     }
     public String getNome() {
